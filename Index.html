@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="styles/styles.css">
     <script src="dist/script.js" defer></script>
-    
+    <link rel="icon" type="image/svg+xml" href="Assets/favicon.png">
 </head>
 <body>
     
@@ -37,16 +37,83 @@
 
     <section id="contactSection">
 
-        <div id="contactDetailsCowebntainer">
+        <div id="contactDetailsContainer">
             <p class="sectionHeading">Contact Us</p>
             <p class="defaultPara">Let us know your queries, feedbacks and enquiries. We are here to support you 24/7.</p>
+
             <hr class="detailsHr">
+            <div class="detailsContainer">
+                <img class="detailImage" src="Assets/phone.webp"/>
+                <div class="detailsText">
+                    <p class="defaultPara">Give us a call</p>
+                    <p class="boldPara">+91 9736097320</p>
+                </div>
+            </div>
+
+            <hr class="detailsHr">
+
+            <div class="detailsContainer">
+                <img class="emailImg" src="Assets/email.webp"/>
+                <div class="detailsText">
+                    <p class="defaultPara">Write to us</p>
+                    <p class="boldPara">cs@guvi.in</p>
+                </div>
+            </div>
+
+            <hr class="detailsHr">
+
+            <div class="detailsContainer">
+                <img class="detailImage" src="Assets/address.webp"/>
+                <div class="detailsText">
+                    <p class="defaultPara">Visit us in Chennai @</p>
+                    <p class="boldPara">IITM Research park - phase 2, module #9, 3rd floor, D block, Kanagam Rd, Tharamani, Chennai, Tamil Nadu 600113</p>
+                </div>
+            </div>
+
+            <div class="detailsContainer">
+                <img class="detailImage finalDetailImg" src="Assets/address.webp"/>
+                <div class="detailsText">
+                    <p class="defaultPara">Visit us in Noida @</p>
+                    <p class="boldPara">A11, HCL Corporation Pvt. Ltd, Block A, Sector 3, Noida, Uttar Pradesh 201307</p>
+                </div>
+            </div>
             
+            <hr class="detailsHr">
 
         </div>
+
         <div id="contactFormContainer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae cupiditate ipsum alias? Aperiam, fuga reiciendis ex incidunt, adipisci et dicta a odit quibusdam obcaecati ipsa voluptatibus commodi delectus aut.
+            <p class="sectionHeading">Say <span class="greenHighlight">Hello !</span></p>
+            <p class="defaultPara">Feel free to stop by and say hi !</p>
+
+            <form id="inputForm">
+                
+                <label for="nameInput" class="defaultPara">First name <span class="mandatory">*</span></label> 
+                <input type="text" id="nameInput" class="inputBox" name="nameInput" required>
+                <!--set placeholder in js-->
+
+                <label for="emailInput" class="defaultPara">E-mail id <span class="mandatory">*</span></label> 
+                <input type="text" id="emailInput" class="inputBox" name="emailInput" required>
+                <!--set placeholder in js-->
+
+                <label for="numberInput" class="defaultPara">Contact Number <span class="mandatory">*</span></label> 
+                <input type="text" id="numberInput" class="inputBox" name="numberInput" required>
+                <!--set placeholder in js-->
+
+                <label for="subjectInput" class="defaultPara">Subject <span class="mandatory">*</span></label> 
+                <input type="text" id="subjectInput" class="inputBox" name="subjectInput" required>
+                <!--set placeholder in js-->
+
+                <label for="messageBox" class="defaultPara">First name <span class="mandatory">*</span></label> 
+                <textarea id="messageBox" name="messageBox" rows="6" cols="40" class="inputBox" required></textarea>
+                <!--set placeholder in js-->
+
+                <input id="submitButton" type="submit" value="Send">
+
+            </form>
+
         </div>
+
 
     </section>
 

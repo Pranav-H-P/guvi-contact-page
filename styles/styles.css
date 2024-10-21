@@ -15,7 +15,7 @@
 
 *{
     --guviGreen:rgb(0, 197, 0);
-    --guviGrey:rgb(107,114,128);
+    --guviGrey:rgb(78, 81, 86);
     --guviDarkGrey:#707070;
     --guviLightGrey:rgb(244, 244, 244);
 
@@ -150,45 +150,129 @@ a{
 
 
 .defaultPara{
-    color:var(--guviGrey);
+    color: var(--guviGrey);
     line-height: 2em;
 }
 
 
+.greenHighlight{
+    color: var(--guviGreen);
+    font-size: inherit;
+}
 
 .sectionHeading{
-    margin:10px;
     font-weight: bold;
     font-size: 2rem;
 }
-
-
-.greenHighlight{
-    font-weight: bold;
-    color:var(--guviGreen);
-}
-
 
 #contactSection{
     min-height: 90vh;
     display: flex;
     margin:5vh 15vw;
+    margin-right: 8vw;
 }
 
 #contactDetailsContainer{
     padding-top: 8vh;
-    flex-basis: 50%;
+    flex-basis: 60%;
+    padding-right: 10%
 }
-
-#contactFormContainer{
-    flex-basis: 50%;
-}
-
 
 .detailsHr{
     opacity: 0.5;
-    margin: 5%;
+    margin: 4%;
     margin-left: 0%;
+    margin: 2%;
+}
+
+
+.detailsContainer{
+    display: flex;
+    padding: 2vh 1vw;
+}
+
+.detailImage{
+    height: 50px;
+    width: auto;
+}
+
+.emailImg{
+    height: 30px;
+    width: auto;
+}
+.detailsText{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+.detailsText>.defaultPara{
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+.finalDetailImg{
+    opacity: 0;
+}
+.boldPara{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+#contactFormContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 40%;
+    margin-top: 0%;
+    border-radius: 10px;
+    padding: 4%;
+    margin: 5%;
+    box-shadow: 1px 2px 20px rgb(160, 160, 160);
+}
+
+
+
+#inputForm{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputBox{
+    padding: 2%;
+    border-radius: 5px;
+    width: 90%;
+    border-color: rgba(0, 0, 0, 0.267);
+    border-width: 1px;
+}
+
+.inputBox:focus{    
+    outline-color: var(--guviGreen);
+}
+
+#messageBox{
+    resize: none;
+}
+
+#submitButton{
+    margin: 10% 0;
+    padding: 3%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--guviGreen);
+    font-weight: bold;
+    color: white;
+}
+
+.mandatory{
+    font-size: inherit;
+    color: red;
+}
+
+
+.invalid{
+    outline-color: red;
 }
 
 #foot{
@@ -291,6 +375,11 @@ a{
         overflow: auto;
     
     }
+    #contactFormContainer{
+        margin: 0;
+        box-shadow: none;
+    }
+    
 }
 
 @media (max-width: 700px) {/* if screen is very small, like phone */
@@ -333,6 +422,13 @@ a{
         display: none;
         
     }
+    #contactSection{
+        flex-direction: column;
+    }
+    #contactFormContainer{
+        margin: 0;
+        box-shadow: none;
+    }
 }
 
 @media (min-width:700px){/*medium sized screen*/
@@ -373,6 +469,13 @@ a{
         display: none;
         
     }
+    #contactSection{
+        flex-direction: column;
+    }
+    #contactFormContainer{
+        margin: 0;
+        box-shadow: none;
+    }
 }
 
 @media (min-width:1000px){/*Normal screen*/
@@ -404,6 +507,14 @@ a{
     #navMiddleDiv{
         display: flex;
         
+    }
+    #contactSection{
+        flex-direction: row;
+    }
+    #contactFormContainer{
+        margin: 5%;
+        box-shadow: 1px 2px 20px rgb(160, 160, 160);
+        padding: 4%;
     }
     
 }
